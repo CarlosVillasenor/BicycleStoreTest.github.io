@@ -1,8 +1,7 @@
-# CarlosVillasenor.github.io
-A simple test of GitHub Pages, it works perfectly.
+# Bicycle-Store-Test
+An HTML, CSS and JS design implementation and form validation.
 
-Tutorial can be found here:
-https://pages.github.com/
+Only one JS fiddle was used and can be found here:
+http://xoxco.com/projects/code/tagsinput/
 
-The basics of GitHub Pages:
-https://help.github.com/categories/github-pages-basics/
+The fiddle was use to create input tags.
