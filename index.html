@@ -1,7 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet">
+    <!-- External fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+    <script href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.js">
+    </script>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/png" href="imgs/favicon.ico">
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+    <header>
+        <div class="navigation-container">
+            <ul class="navigation-items">
+                <li><a href="#">Bicis</a></li>
+                <li><a href="#">Componentes</a></li>
+                <li><a href="#">Accesorios</a> </li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Comunidad</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="purchase-section">
+                <a href="#"><img class="search" src="imgs/search.png" alt=""></a>
+                <a href="#"><img class="basket" src="imgs/basket.png" alt=""></a>
+                <span>0</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="jumbotron">
+        <div class="ornaments">
+            <div class="ornament-element-1"></div>
+            <div class="ornament-elements">
+                <div class="ornament-element-2">
+                    <div class="ornament-element-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="supporting-1">
+            <div class="tittle-section">
+                <p>Preguntas</p>
+            </div>
+            <form id="RegForm" class="form-section">
+                <div class="square-ornament"></div>
+                <div class="form">
+                    <div class="questions">
+                        <p>¿Qué tipo de ciclismo practicas?</p>
+                        <input id="CyclingType" type="text" class="tags" value="" />
+                    </div>
+                    <div class="questions">
+                        <p>Años usando la bicicleta</p>
+                        <select id="YearsUsingBicycle">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="questions">
+                        <p>¿Cuántas horas a la semana usas tu bicicleta?</p>
+                        <div class="styled-select slate">
+                            <select id="HoursPerWeek">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="questions">
+                        <p>Escribe las marcas que más te agraden</p>
+                        <!-- <input id="LikedBrands" value="" multiple> -->
+                        <input id="LikedBrands" type="text" class="tags" value="" />
+                    </div>
+                    <div class="submit-button" onclick="verifyForm()">
+                        <p>Aceptar</p>
+                        <img src="imgs/arrow.png" alt="">
+                    </div>
+                    <div class="loader-container">
+                        <div class="loader"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-ornament"></div>
+        <div class="footer-content">
+            <div class="footer-supporting-1">
+                <div class="footer-supporting-1-content">
+                    <div class="footer-supporting-1-menu-elements-1">
+                        <ul>
+                            <li><a href="#">Productos </a></li>
+                            <li><a href="#">Servicios</a></li>
+                            <li><a href="#">Comunidad </a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Contacto </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-supporting-1-menu-elements-2">
+                        <p>Todos los derechos reservados</p>
+                        <ul>
+                            <li><a href="#">Terminos y condiciones</a></li>
+                            <li><a href="#">Aviso de privacidad </a></li>
+                            <li><a href="#">Preguntas frecuentes </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-supporting-2">
+                <div class="footer-supporting-2-content">
+                    <ul>
+                        <li><a href="#"><img src="imgs/facebook.png" alt=""></a></li>
+                        <li><a href="#"><img src="imgs/twitter.png" alt=""></a></li>
+                        <li><a href="#"><img src="imgs/instagram.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Offscreen elements -->
+
+    <div class="message-box">
+        <p>Tus datos fueron enviados exitosamente.</p>
+    </div>
+
+    <!-- Imports for the input tag -->
+    <link rel="stylesheet" type="text/css" href="./src/jquery.tagsinput.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./src/jquery.tagsinput.js"></script>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js'></script>
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/themes/start/jquery-ui.css" />
+
+    <!-- scripts for this site -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/form.js"></script>
+
+
 </body>
+
 </html>
