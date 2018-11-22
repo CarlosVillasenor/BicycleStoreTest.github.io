@@ -1,0 +1,552 @@
+/* General Styles */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+/* Header */
+
+header {
+    background-color: #201D2B;
+    height: 86px;
+}
+
+.navigation-container {
+    max-width: 680px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    color: white;
+}
+
+.navigation-container span {
+    font-size: 10px;
+    position: relative;
+    bottom: 4px;
+}
+
+/* Navigation Items */
+
+.navigation-items {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    height: 100%;
+    font-size: 10px;
+    margin: 0 auto;
+    color: white;
+}
+
+.navigation-items li {
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.navigation-items li a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.navigation-items li a:hover,
+.navigation-items li a:active {
+    color: #40A4C8;
+}
+
+.purchase-section {
+    width: 160px;
+    position: absolute;
+    right: 0;
+    top: 24px;
+    /* IE 9 */
+    -ms-transform: translate(100%, 0);
+    /* Safari */
+    -webkit-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+}
+
+.purchase-section .search {
+    width: 32px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.purchase-section .basket {
+    width: 28px;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    height: 1440px;
+    position: relative;
+}
+
+.jumbotron .ornament-element-1 {
+    background-color: #E80042;
+    width: 66%;
+    height: 640px;
+    border-right: 6px solid #020000;
+}
+
+.ornament-elements {
+    position: relative;
+    width: 100%;
+}
+
+.jumbotron .ornament-element-2 {
+    background-color: #171D25;
+    width: 66%;
+    height: 640px;
+    position: relative;
+}
+
+.jumbotron .ornament-element-3 {
+    background-color: #FFD600;
+    position: absolute;
+    width: 40%;
+    right: 0px;
+    height: 633px;
+    border-color: #020000;
+    border-style: solid;
+    border-width: 4px 4px 3px 6px;
+    /* IE 9 */
+    -ms-transform: translate(100%, 0);
+    /* Safari */
+    -webkit-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+}
+
+.supporting-1 {
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+    max-width: 800px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.tittle-section {
+    color: white;
+    height: 350px;
+    position: relative;
+}
+
+.tittle-section p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 26px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 100px;
+}
+
+.form-section {
+    height: 700px;
+    margin: 0px auto;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border: 3px solid black;
+    position: relative;
+    z-index: 10;
+    padding-top: 20px;
+}
+
+.form-section:after {
+    border: 2px solid black;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    z-index: -1;
+}
+
+.square-ornament {
+    height: 40px;
+    width: 40px;
+    margin: 0px auto;
+    background-color: black;
+    padding: 10px;
+    border: 3px solid black;
+    position: relative;
+    z-index: 10;
+}
+
+.square-ornament:after {
+    border: 1px solid white;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    z-index: -1;
+}
+
+.form {
+    width: 100%;
+    max-width: 540px;
+    display: block;
+    margin: 0 auto;
+}
+
+.questions:nth-child(4) {
+    margin-bottom: 70px;
+}
+
+.questions {
+    margin: 40px 0;
+}
+
+.questions p {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.questions input {
+    max-width: 520px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+.questions select {
+    background: white;
+    padding: 10px 14px;
+    border: 1px solid black;
+}
+
+.submit-button {
+    transition: all 1s;
+    background-color: darkgray;
+    display: block;
+    margin: 60px auto;
+    color: white;
+    width: 270px;
+    position: relative;
+    cursor: not-allowed;
+}
+
+.submit-button p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.submit-button img {
+    position: absolute;
+    top: 12px;
+    right: 60px;
+    width: 14px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #004E7F;
+    height: 296px;
+    position: relative;
+    font-size: 10px;
+}
+
+.footer-ornament {
+    background-color: #1B002C;
+    width: 140px;
+    height: 296px;
+    position: absolute;
+    right: 0;
+    border-left: 3px solid white;
+}
+
+.footer-content {
+    display: block;
+    margin: 0 auto;
+    height: 180px;
+    width: 100%;
+    max-width: 1212px;
+    position: relative;
+    top: 60px;
+    color: white;
+}
+
+.footer-supporting-1 {
+    border: 3px solid white;
+    width: 75%;
+    height: 174px;
+    position: absolute;
+    left: 0;
+}
+
+.footer-supporting-1-content {
+    width: 100%;
+    max-width: 764px;
+    margin: 0 auto;
+    margin-top: 88px;
+}
+
+.footer-supporting-1 ul,
+.footer-supporting-2 ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-supporting-1 ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin: 10px 20px;
+}
+
+.footer-supporting-1 ul li:first-child {
+    margin-left: 0;
+}
+
+.footer-supporting-1 ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin: 10px 20px;
+}
+
+.footer-supporting-1-menu-elements-2 {
+    position: relative;
+}
+
+.footer-supporting-1-menu-elements-2 ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.footer-supporting-1-menu-elements-2 ul li {
+    margin: 0;
+    padding: 0 6px;
+    text-transform: none;
+    border-right: 1px solid white;
+}
+
+.footer-supporting-1-menu-elements-2 ul li:nth-child(3) {
+    border-right: none;
+}
+
+.footer-supporting-2 {
+    border: 3px solid white;
+    width: 22%;
+    height: 174px;
+    position: absolute;
+    right: 0;
+}
+
+.footer-supporting-2-content {
+    display: block;
+    position: absolute;
+    bottom: 22px;
+    left: 40px;
+}
+
+.footer-supporting-2-content ul {}
+
+.footer-supporting-2-content ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.footer-supporting-2-content ul li img {
+    width: 12px;
+}
+
+/* Dinamic Classes */
+
+.valid-submit {
+    background-color: #00B6DB;
+    cursor: pointer;
+}
+
+/* Loader */
+
+/* This a loader i found and modified in W3 school */
+
+.loader {
+    display: none;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    width: 10px;
+    height: 10px;
+    -webkit-animation: spin 0.9s linear infinite;
+    /* Safari */
+    animation: spin 0.9s linear infinite;
+}
+
+.loader-container {
+    position: absolute;
+    transform: translate(-50%);
+    bottom: 60px;
+    left: 50%;
+}
+
+.loading {
+    display: block;
+}
+
+/* Safari */
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* offscreen elements */
+
+.message-box {
+    opacity: 0;
+    transition: all 0.4s;
+    background-color: darkgray;
+    width: 240px;
+    height: 70px;
+    text-align: center;
+    background-color: white;
+    border: 3px solid black;
+    position: fixed;
+    top: -70px;
+    padding: 4px;
+    color: black;
+    transform: translate(-50%);
+    left: 50%;
+    box-sizing: border-box;
+}
+
+.message-box:after {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    z-index: -1;
+    border: 2px solid black;
+}
+
+.message-box p {
+    font-size: 11px;
+    width: 124px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.showmessage {
+    opacity: 1;
+    top: 14px;
+}
+
+/* Animations */
+
+.tittle-section p {
+    -webkit-animation-name: introText;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: introText;
+    animation-duration: 1s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes introText {
+    0%   {bottom: 400px; opacity: 0;}
+    25%  {opacity: 0;}
+    50%  {opacity: 0.5; bottom: 90px}
+    100% {bottom: 100px; opacity: 1;}
+}
+
+
+/* Standard syntax */
+
+@keyframes introText {
+     0%   {bottom: 400px; opacity: 0;}
+    25%  {opacity: 0;}
+    50%  {opacity: 0.5; bottom: 90px}
+    100% {bottom: 100px; opacity: 1;}
+}
+
+.form-section {
+    -webkit-animation-name: introForm;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: introForm;
+    animation-duration: 1s;
+}
+
+/* Standard syntax */
+
+@keyframes introForm {
+     0%   {bottom: 400px; opacity: 0;}
+    25%  {opacity: 0;}
+    50%  {opacity: 0.5; bottom: -20px}
+    100% {bottom: 0px; opacity: 1;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes introForm {
+    0%   {bottom: 400px; opacity: 0;}
+    25%  {opacity: 0;}
+    50%  {opacity: 0.5; bottom: -20px}
+    100% {bottom: 0px; opacity: 1;}
+}
