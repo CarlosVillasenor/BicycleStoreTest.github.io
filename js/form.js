@@ -63,7 +63,7 @@ function makeCall() {
 
     console.log(data);
 
-    axios.post('https://jsonplaceholder.typicode.com/posts', data)
+    axios.post('https://bicyclestoretest.firebaseio.com/orders.json', data)
         .then(response => {
             console.log(response);
             loaderElement.classList.remove("loading");
